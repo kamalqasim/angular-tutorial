@@ -1,0 +1,3 @@
+
+<app-posts-list (postWasSelected)="selectedPost=$event" *ngIf="!selectedPost"></app-posts-list>
+<app-post-deatil *ngIf="selectedPost" [post]="selectedPost"></app-post-deatil>

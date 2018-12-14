@@ -1,0 +1,22 @@
+<div class="card">
+  <h5 class="card-header">Posts</h5>
+  <div class="card-body">
+    <img [src]=post.imagePath class="img-thumbnail">
+    <h5 class="card-title">{{post.name}}</h5>
+    <p class="card-text">{{post.content}}</p>
+    <div class="btn" appDropdown>
+      <button class="btn btn-secondary dropdown-toggle" type="button">
+        Dropdown button
+      </button>
+    </div>
+    <div class="dropdown">
+
+      <div class="dropdown-menu" #myClassShow>
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+
+    </div>
+  </div>
+</div>
